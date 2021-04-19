@@ -38,7 +38,7 @@ function is_java8 {
 #0(not running),  1(is running)
 #function is_proxyRunning {
 #        local _pid="$1"
-#        local pid=`ps ax | grep -i 'com.webank.runtime.boot.EventMeshStartup' |grep java | grep -v grep | awk '{print $1}'|grep $_pid`
+#        local pid=`ps ax | grep -i 'org.apache.runtime.boot.EventMeshStartup' |grep java | grep -v grep | awk '{print $1}'|grep $_pid`
 #        if [ -z "$pid" ] ; then
 #            return 0
 #        else
@@ -53,13 +53,13 @@ function get_pid {
 	else
 		if [[ $OS =~ Msys ]]; then
 			# 在Msys上存在可能无法kill识别出的进程的BUG
-			ppid=`jps -v | grep -i "com.webank.eventmesh.runtime.boot.EventMeshStartup" | grep java | grep -v grep | awk -F ' ' {'print $1'}`
+			ppid=`jps -v | grep -i "org.apache.eventmesh.runtime.boot.EventMeshStartup" | grep java | grep -v grep | awk -F ' ' {'print $1'}`
 		elif [[ $OS =~ Darwin ]]; then
 			# 已知问题：grep java 可能无法精确识别java进程
-			ppid=$(/bin/ps -o user,pid,command | grep "java" | grep -i "com.webank.eventmesh.runtime.boot.EventMeshStartup" | grep -Ev "^root" |awk -F ' ' {'print $2'})
+			ppid=$(/bin/ps -o user,pid,command | grep "java" | grep -i "org.apache.eventmesh.runtime.boot.EventMeshStartup" | grep -Ev "^root" |awk -F ' ' {'print $2'})
 		else
 			#在Linux服务器上要求尽可能精确识别进程
-			ppid=$(ps -C java -o user,pid,command --cols 99999 | grep -w $EVENTMESH_HOME | grep -i "com.webank.eventmesh.runtime.boot.EventMeshStartup" | grep -Ev "^root" |awk -F ' ' {'print $2'})
+			ppid=$(ps -C java -o user,pid,command --cols 99999 | grep -w $EVENTMESH_HOME | grep -i "org.apache.eventmesh.runtime.boot.EventMeshStartup" | grep -Ev "^root" |awk -F ' ' {'print $2'})
 		fi
 	fi
 	echo "$ppid";
@@ -154,7 +154,7 @@ make_logs_dir
 echo "using jdk[$JAVA]" >> ${EVENTMESH_LOG_HOME}/eventmesh.out
 
 
-EVENTMESH_MAIN=com.webank.eventmesh.runtime.boot.EventMeshStartup
+EVENTMESH_MAIN=org.apache.eventmesh.runtime.boot.EventMeshStartup
 if [ $DOCKER ]
 then
 	$JAVA $JAVA_OPT -classpath ${EVENTMESH_HOME}/conf:${EVENTMESH_HOME}/apps/*:${EVENTMESH_HOME}/lib/* $EVENTMESH_MAIN >> ${EVENTMESH_LOG_HOME}/eventmesh.out

@@ -92,7 +92,7 @@ dependencies {
 **2.3.4 启动运行**
 
 ```
-运行com.webank.eventmesh.starter.StartUp的主要方法
+运行org.apache.eventmesh.starter.StartUp的主要方法
 ```
 
 

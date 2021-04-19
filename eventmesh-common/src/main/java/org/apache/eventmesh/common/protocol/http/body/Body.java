@@ -18,7 +18,6 @@
 package org.apache.eventmesh.common.protocol.http.body;
 
 
-import com.webank.eventmesh.common.protocol.http.body.client.*;
 import org.apache.eventmesh.common.protocol.http.body.client.*;
 import org.apache.eventmesh.common.protocol.http.common.RequestCode;
 import org.apache.eventmesh.common.protocol.http.body.message.PushMessageRequestBody;

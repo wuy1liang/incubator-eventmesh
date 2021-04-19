@@ -19,7 +19,6 @@ package org.apache.eventmesh.runtime.boot;
 
 import com.google.common.eventbus.EventBus;
 import org.apache.eventmesh.runtime.core.consumergroup.ConsumerGroupConf;
-import com.webank.eventmesh.runtime.core.protocol.http.processor.*;
 import org.apache.eventmesh.runtime.core.protocol.http.processor.inf.Client;
 import org.apache.eventmesh.runtime.core.protocol.http.producer.ProducerManager;
 import org.apache.eventmesh.runtime.core.protocol.http.consumer.ConsumerManager;

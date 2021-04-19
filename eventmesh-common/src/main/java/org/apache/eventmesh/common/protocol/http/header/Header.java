@@ -19,7 +19,6 @@ package org.apache.eventmesh.common.protocol.http.header;
 
 
 import org.apache.eventmesh.common.protocol.http.common.RequestCode;
-import com.webank.eventmesh.common.protocol.http.header.client.*;
 import org.apache.eventmesh.common.protocol.http.header.client.*;
 import org.apache.eventmesh.common.protocol.http.header.message.PushMessageRequestHeader;
 import org.apache.eventmesh.common.protocol.http.header.message.SendMessageBatchV2RequestHeader;

@@ -39,7 +39,7 @@ public class RocketMQProducerImpl implements MeshMQProducer {
 
     private ProducerImpl producer;
 
-    public final String DEFAULT_ACCESS_DRIVER = "com.webank.eventmesh.connector.rocketmq.MessagingAccessPointImpl";
+    public final String DEFAULT_ACCESS_DRIVER = "org.apache.eventmesh.connector.rocketmq.MessagingAccessPointImpl";
 
     @Override
     public synchronized void init(Properties keyValue) {

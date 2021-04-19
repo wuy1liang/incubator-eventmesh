@@ -25,7 +25,7 @@ import org.apache.eventmesh.runtime.constants.DeFiBusConstant;
 import org.apache.eventmesh.runtime.constants.EventMeshConstants;
 import org.apache.eventmesh.runtime.core.protocol.tcp.client.session.Session;
 import org.apache.eventmesh.runtime.core.protocol.tcp.client.session.push.DownStreamMsgContext;
-//import com.webank.eventmesh.connector.defibus.common.Constants;
+//import org.apache.eventmesh.connector.defibus.common.Constants;
 import io.openmessaging.api.Message;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

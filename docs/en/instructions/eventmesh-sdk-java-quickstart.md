@@ -21,14 +21,14 @@ TCP demos and Http demos are both under the **eventmesh-test** module.
 - start consumer ,subscribe topic in previous step. 
 
 ```
-Run the main method of AsyncSubscribe
+Run the main method of org.apache.eventmesh.tcp.demo.AsyncSubscribe
 ```
 
 - start producer, send  message
 
 
 ```
-Run the main method of AsyncPublish
+Run the main method of org.apache.eventmesh.tcp.demo.AsyncPublish
 ```
 
 #### Broadcast msg 
@@ -38,13 +38,13 @@ Run the main method of AsyncPublish
 - start consumer ,subscribe topic in previous step. 
 
 ```
-Run the main method of AsyncSubscribeBroadcast
+Run the main method of org.apache.eventmesh.tcp.demo.AsyncSubscribeBroadcast
 ```
 
 * start producer, send broadcast message
 
 ```
-Run the main method of AsyncPublishBroadcast
+Run the main method of org.apache.eventmesh.tcp.demo.AsyncPublishBroadcast
 ```
 
 ### 2. HTTP DEMO
@@ -64,12 +64,12 @@ Run the main method of AsyncPublishBroadcast
   Async consumer demo is a spring boot application demo,  you can easily run this demo to start service and subscribe the topic.
 
 ```
-Run the main method of SpringBootDemoApplication
+Run the main method of org.apache.eventmesh.http.demo.sub.SpringBootDemoApplication
 ```
 
 - start producer, produce msg
 
 ```
-Run the main method of AsyncPublishInstance
+Run the main method of org.apache.eventmesh.http.demo.AsyncPublishInstance
 ```
 

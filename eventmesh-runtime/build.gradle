@@ -33,8 +33,8 @@ repositories {
 }
 
 //List defibus = [
-//    "com.webank.defibus:defibus-client:$defibus_version",
-//    "com.webank.defibus:defibus-common:$defibus_version"
+//    "org.apache.defibus:defibus-client:$defibus_version",
+//    "org.apache.defibus:defibus-common:$defibus_version"
 //]
 
 List junit = [

@@ -21,14 +21,14 @@ TCP 和 Http 示例都在**eventmesh-test**模块下
 - 启动消费者，订阅上一步骤已经创建的Topic
 
 ```
-运行com.webank.eventmesh.tcp.demo.AsyncSubscribe的主要方法
+运行org.apache.eventmesh.tcp.demo.AsyncSubscribe的主要方法
 ```
 
 - 启动发送端，发送消息
 
 
 ```
-运行com.webank.eventmesh.tcp.demo.AsyncPublish的主要方法
+运行org.apache.eventmesh.tcp.demo.AsyncPublish的主要方法
 ```
 
 <h4>广播消息</h4>
@@ -38,13 +38,13 @@ TCP 和 Http 示例都在**eventmesh-test**模块下
 - 启动消费端，订阅上一步骤已经创建的Topic
 
 ```
-运行com.webank.eventmesh.tcp.demo.AsyncSubscribeBroadcast的主要方法
+运行org.apache.eventmesh.tcp.demo.AsyncSubscribeBroadcast的主要方法
 ```
 
 - 启动发送端，发送广播消息
 
 ```
-运行com.webank.eventmesh.tcp.demo.AsyncPublishBroadcast的主要方法
+运行org.apache.eventmesh.tcp.demo.AsyncPublishBroadcast的主要方法
 ```
 
 ### 2. HTTP演示
@@ -64,13 +64,13 @@ TCP 和 Http 示例都在**eventmesh-test**模块下
   异步事件消费端为spring boot demo，运行demo即可启动服务并完成Topic订阅
 
 ```
-运行com.webank.eventmesh.http.demo.sub.SpringBootDemoApplication的主要方法
+运行org.apache.eventmesh.http.demo.sub.SpringBootDemoApplication的主要方法
 ```
 
 - 启动发送端，发送消息
 
 ```
-运行com.webank.eventmesh.http.demo.AsyncPublishInstance的主要方法
+运行org.apache.eventmesh.http.demo.AsyncPublishInstance的主要方法
 ```
 
 

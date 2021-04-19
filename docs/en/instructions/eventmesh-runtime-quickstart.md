@@ -92,7 +92,7 @@ dependencies {
 
 **2.3.4 Run**
 
-running `StartUp` main method
+running `org.apache.eventmesh.starter.StartUp` main method
 
 
 

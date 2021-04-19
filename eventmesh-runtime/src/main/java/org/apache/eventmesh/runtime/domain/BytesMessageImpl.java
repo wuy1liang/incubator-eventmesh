@@ -14,7 +14,7 @@
 // * See the License for the specific language governing permissions and
 // * limitations under the License.
 // */
-//package com.webank.eventmesh.runtime.domain;
+//package org.apache.eventmesh.runtime.domain;
 //
 //import io.openmessaging.BytesMessage;
 //import io.openmessaging.KeyValue;

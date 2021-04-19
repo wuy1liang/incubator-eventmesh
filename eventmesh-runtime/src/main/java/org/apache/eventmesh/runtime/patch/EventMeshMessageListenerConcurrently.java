@@ -15,7 +15,7 @@
 // * limitations under the License.
 // */
 //
-//package com.webank.eventmesh.runtime.patch;
+//package org.apache.eventmesh.runtime.patch;
 //
 //import org.apache.commons.collections4.CollectionUtils;
 //import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
